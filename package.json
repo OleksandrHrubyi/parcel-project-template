@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://oleksandrhrubyi.github.io//project_barbershop",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html",
-    "predeploy": "npm run build -- --public-url=/project_barbershop/",
-    "deploy": "gh-pages -d dist"
+    "deploy": "netlify deploy -p",
+    "predeploy": "npm run build",
+    "pred": "npm run build -- --public-url=/project_barbershop/",
+    "deploygp": "gh-pages -d dist",
+    "gadd": "git add -A",
+    "gcm": "git commit -m",
+    "gp": "git push origin"
   },
   "repository": {
     "type": "git",

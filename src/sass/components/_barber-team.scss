@@ -16,27 +16,27 @@ ul {
 
 img {
   display: block;
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: auto;
 }
 
 .container {
+  margin-left: auto;
+  margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
 
   @media screen and (min-width: 448px) {
-      width: 448px;  
+    width: 448px;
   }
 
   @media screen and (min-width: 720px) {
-      width: 720px;  
+    width: 720px;
   }
 
   @media screen and (min-width: 1200px) {
-      width: 1200px;
-      margin-left: auto;
-      margin-right: auto; 
-  }    
+    width: 1200px;
+  }
 }
 
 .team-box {
@@ -47,8 +47,8 @@ img {
 
   @media screen and (min-width: 720px) and (max-width: 1199px) {
     padding-left: 144px;
-    padding-right: 144px;  
-  } 
+    padding-right: 144px;
+  }
 }
 
 // Секция мастеров
@@ -82,13 +82,13 @@ img {
   line-height: 1.36;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  
+
   @media screen and (max-width: 447px) {
     font-size: 7px;
   }
 }
 
-.dash{
+.dash {
   display: inline-flex;
   margin-bottom: 5px;
   margin-right: 20px;
@@ -131,18 +131,18 @@ img {
   }
 
   @media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
-      .master-card:not(:last-child){
-        margin-right: 30px;
-      }
+    .master-card:not(:last-child) {
+      margin-right: 30px;
+    }
 
-      .master-card {
-        width: calc((100% - 2 * 30px) / 3);
-      }
+    .master-card {
+      width: calc((100% - 2 * 30px) / 3);
+    }
   }
 }
 
@@ -155,7 +155,6 @@ img {
     margin-right: 0;
     margin-bottom: 30px;
   }
-
 }
 
 //  Имя сотрудника
@@ -179,8 +178,8 @@ img {
 
   font-size: 14px;
   line-height: 1.36;
-  letter-spacing: 0.02em;    
-  text-align: center;    
+  letter-spacing: 0.02em;
+  text-align: center;
 }
 
 // Список иконок социальных сетей
@@ -189,9 +188,9 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  
+
   li:not(:last-child) {
-      margin-right: 10px;
+    margin-right: 10px;
   }
 }
 
@@ -206,13 +205,14 @@ img {
 
   border-radius: 50%;
   transition: all $main-transition-timing;
- 
+
   fill: $title-text-color;
   background-color: $main-bg-color;
 
   cursor: pointer;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     fill: $accent-color;
   }
 }
